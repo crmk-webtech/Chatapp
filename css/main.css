@@ -1,0 +1,152 @@
+*{
+    margin:1px;
+      padding:0;
+  }
+ .outer{
+     border:1px solid black;
+    
+     height:95vh;
+  
+ }
+ .row #inner{
+     background-color: rgb(48, 84, 150);
+     opacity:0.8;
+     height:10vh;
+    margin:0;
+   position: fixed;
+   color:white;
+ }
+ .search{
+  position: fixed;
+  margin-top:13vh;
+  margin-left:3%;
+ }
+ .chat{
+     height:13vh;
+    
+ }
+ .header{
+     margin:3% 0.2%;
+     font-size:2.5rem;
+ }
+ #searchbar{
+     background-color:rgb(231, 221, 221);
+     padding:7px;
+     border-radius:20px;
+     font-size:1.5rem;
+ }
+ 
+ ::-webkit-scrollbar {
+width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #888; 
+border-radius:2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #555; 
+}
+.main::-webkit-input-placeholder { 
+font-family: FontAwesome;
+font-weight: normal; 
+overflow: visible; 
+vertical-align: top; 
+display: inline-block !important; 
+padding-left: 5px;
+padding-top: 2px; 
+
+}
+
+.main::-moz-placeholder  { 
+font-family: FontAwesome;
+font-weight: normal;
+overflow: visible;
+vertical-align: top;
+display: inline-block !important;
+padding-left: 5px;
+padding-top: 2px;
+
+}
+
+.main:-ms-input-placeholder  { 
+font-family: FontAwesome;
+font-weight: normal;
+overflow: visible;
+vertical-align: top;
+/* display: inline-block !important; */
+padding-left: 5px;
+padding-top: 2px;
+
+}
+.main::selected{
+border-radius: 20px;
+}
+.user{
+color:blue;
+}
+.chat:hover{
+background-color:rgb(218, 234, 245);
+}
+#sidebar{
+    display:none;
+    width:455px;;
+    position:absolute;
+    height:95vh;
+    background-color:white;
+   border:1px solid black;
+    animation-duration: 1s;
+}
+@keyframes sidebar-in{
+    from{left:-456px;}
+    to{left:0px}
+}
+@keyframes sidebar-out{
+    from{left:0px;}
+    to{left:-455px;}
+}
+.style{
+    display:none;
+    
+}
+.top-sidebar{
+  background-color: rgb(48, 84, 150);
+  opacity:0.7 ;
+}
+#usericon,#username,#userno{
+    background-color: rgb(48, 84, 150);
+  color:white;
+  text-align:center;
+  z-index:1;
+}
+#usericon{
+    display:block;
+    margin:auto;
+    padding-top:4%;
+}
+#username,#userno{
+    font-size:2rem;
+}
+#userno{
+    padding-bottom: 4%;
+}
+.option{
+    margin:2%;
+    border-bottom: 1px groove;
+    font-size:1.75rem;
+}
+.icons{
+    margin:4%;
+}
+#sidebar a{
+    text-decoration:none;
+    color:black;
+}
