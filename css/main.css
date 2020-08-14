@@ -1,20 +1,24 @@
 *{
-    margin:1px;
+    margin:0px;
       padding:0;
+      box-sizing: border-box;
+      overflow:hidden;
   }
+
  .outer{
-     border:1px solid black;
+     border:1px groove; 
     
      height:95vh;
   
  }
  .row #inner{
-     background-color: rgb(48, 84, 150);
-     opacity:0.8;
+     background-color: rgb(0,172,255);
+     /* //opacity:0.8; */
      height:10vh;
     margin:0;
    position: fixed;
    color:white;
+   box-shadow:2px 2px 2px rgb(0,172,255);
  }
  .search{
   position: fixed;
@@ -23,17 +27,38 @@
  }
  .chat{
      height:13vh;
+     padding-left: 2%;
     
+ }
+ #menu{
+    font-size:3.5rem;
+   
+ }
+ #send{
+    margin-left:0px;
+    font-size:2.8rem;
+ }
+ #menu:hover{
+     font-size: 3.1rem;
+     cursor: pointer;
+     
+ }
+ #send:hover{
+font-size:2.5rem;
+cursor: pointer;
+
  }
  .header{
      margin:3% 0.2%;
      font-size:2.5rem;
  }
  #searchbar{
-     background-color:rgb(231, 221, 221);
+     background-color:rgb(232,240,243);
      padding:7px;
      border-radius:20px;
      font-size:1.5rem;
+     width:86%;
+     outline:transparent;
  }
  
  ::-webkit-scrollbar {
@@ -101,13 +126,21 @@ background-color:rgb(218, 234, 245);
     width:455px;;
     position:absolute;
     height:95vh;
+    margin-left:-13px;
+    
     background-color:white;
    border:1px solid black;
     animation-duration: 1s;
 }
+#sidebar li{
+    list-style-type:none;
+}
+#sidebar li:hover{
+    background-color:rgb(232,240,243);
+}
 @keyframes sidebar-in{
-    from{left:-456px;}
-    to{left:0px}
+    from{left:-455px;}
+    to{left:0px;}
 }
 @keyframes sidebar-out{
     from{left:0px;}
@@ -118,11 +151,11 @@ background-color:rgb(218, 234, 245);
     
 }
 .top-sidebar{
-  background-color: rgb(48, 84, 150);
-  opacity:0.7 ;
+  background-color: rgb(0,172,255);
+  opacity:0.8 ;
 }
 #usericon,#username,#userno{
-    background-color: rgb(48, 84, 150);
+    background-color: rgb(0,172,255);
   color:white;
   text-align:center;
   z-index:1;
@@ -149,4 +182,279 @@ background-color:rgb(218, 234, 245);
 #sidebar a{
     text-decoration:none;
     color:black;
+}
+.setting-options{
+    padding: 10px;
+    background-color: rgb(0,172,255);
+    opacity: 0.7;
+    color: whitesmoke;
+    font-size: large;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.setting-options:hover{
+    background-color: rgb(0,172,255);
+    opacity: 0.7;
+    padding: 12px;
+}
+
+#settings a{
+    margin: 0;
+    text-decoration: none;
+}
+#inner-search,#ellipsis{
+    margin:2%;
+    margin-top:-9px;
+    float:right;
+    font-size:2.5rem;
+    display:none;
+}
+#ellipsis{
+    margin:2.5%;
+    margin-top:-8px;
+}
+.chat-menu{
+    margin:5%;
+    padding:3%;
+   list-style-type: none;;
+}
+.chat-menu a{
+    text-decoration: none;
+    color:black;
+}
+a{
+    text-decoration: none;
+}
+.chat-div{
+    border:1px solid black;
+    position: absolute;
+    margin-left:75.5%;
+    background-color: white;
+    width:200px;
+    z-index:10;
+    display:none;
+}
+.chat-menu:hover{
+    background-color:rgb(232,240,243);
+    border-radius: 10px;
+   
+}
+.chat-menu a:hover{
+    text-decoration: none;
+    color:black;
+}
+#invitefriends img{
+    width: 250px;
+    height: auto;
+    opacity: 0.5;
+    margin: 10vh 0 0 15vw;
+}
+
+#invite-content{
+    text-align: center;
+    font-size: 30px;
+    margin: 12vh 0 12vh 0;
+    color:rgb(0,172,255);
+    
+}
+
+#invite-link{
+    text-align: center;
+}
+#invite-link i{
+    padding: 11px;
+    background-color: rgb(0,172,255);
+    opacity: 0.7;
+    color: whitesmoke;
+    font-size: 20px;
+    margin: 0px;
+    vertical-align: middle;
+}
+#invite-link input{
+    padding: 9px;
+    width: 25vw;
+    outline: none;
+    margin: 0px;
+}
+#contacts,#saved,#group,#calls,#invitefriends,#settings{
+    position: absolute;
+    width:454px;
+    background-color: white;
+    padding: 0;
+    box-sizing: border-box;
+    
+    display:none;;
+    margin-left: -13px;
+    animation-duration: 1s;
+}
+#contact-scroll,#saved-scroll,#group-scroll,#calls-scroll{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height:82vh;
+}
+#group-scroll{
+    height:76vh;
+}
+.color-green{
+    color: green;
+}
+
+.save .emptysave {
+    display: none;
+}
+.save:hover .emptysave {
+    display: inline;
+}
+.save:hover .filledsave {
+    display: none;
+}
+.plus:hover{
+    color: skyblue;
+}
+.contactsearch{
+    margin: 2% 0 0 0;
+    width: 40vw;
+    overflow: hidden;
+}
+.emoji-dashboard .emojis{
+    display:flex;
+    list-style-type: none;
+    flex-wrap:wrap;
+    width:230px;
+    border:1px groove;
+    background-color: white;
+}
+.emoji{
+    margin:2%;
+    color:black;
+}
+.emoji-dashboard{
+    display:none;
+    position: absolute;
+    z-index: 10;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height:60px;
+}
+#second {
+   
+    display: block;
+    position: relative;
+  }
+  .modal ,.modal1,.modal2,.modal3{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  .modal2{
+      padding-top: 0px!important;
+  }
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 63%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+ 
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 2px 16px;
+    background-color: rgb(0,172,255);;
+    color: white;
+  }
+  
+  .modal-body {padding: 2px 16px;display:flex;flex-wrap:wrap;}
+  #modal-heading{
+      font-size:2rem;
+      font-weight: bolder;
+      
+  }
+  #report{
+    
+    padding: 0;
+    box-sizing: border-box;
+    width:100%;
+    /* overflow-y: scroll; */
+}
+
+#report-content{
+    text-align: center;
+    font-size: 30px;
+    margin: 4vh 0 4vh 0;
+    color: rgb(0, 172, 255);
+}
+
+#reason table td{
+    padding: 20px;
+}
+#reason table{
+    margin: auto;
+    font-size: large;
+}
+
+#reason table tr{
+    padding: 100px;
+    border: 2px solid gray;
+}
+
+#reason table tr:hover{
+    background-color: rgb(0,172,255);
+    color: white;
+    opacity: 0.6;
+}
+
+
+#other{
+    visibility: hidden;
+}
+
+.report{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(0,172,255);
+    color: white;
+    margin: 8px;
+    outline:transparent
 }
