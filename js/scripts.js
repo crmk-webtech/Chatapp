@@ -303,6 +303,7 @@ function backcall(){
    callsMenu.style.animationName="sidebar-out"
    callsMenu.addEventListener("webkitAnimationEnd",animationDisplaycalls)
 }
+
 function backcontact(){
    contactMenu.style.animationName="sidebar-out"
  
@@ -496,5 +497,51 @@ function displayVideo(){
   document.getElementsByClassName("modal-body")[0].style.flexWrap="wrap";
   document.getElementsByClassName("modal")[0].style.paddingTop="100px";
   document.getElementsByClassName("modal-body")[0].style.padding="1%";
-  document.getElementsByClassName("modal-body")[0].innerHTML='<video width="150" height="150" controls><source src="./videos/VID-20191225-WA001.mp4" /></video>';
+  if(div.className==="raghav"){
+  document.getElementsByClassName("modal-body")[0].innerHTML='<video width="150" height="150" controls><source src="./videos/VID-20191225-WA0001.mp4" /></video>';}
+  else{
+   document.getElementsByClassName("modal-body")[0].innerHTML='<video width="150" height="150" controls><source src="./videos/VID-20200624-WA0010.mp4" /></video>';}
+  }
+
+var modal4=document.getElementsByClassName("modal4")[0];
+function displayBlock(){
+   modal.style.display = "block";
+   header.innerHTML='<span style="font-size:2.5rem">&nbsp;Block Contact</span>';
+   document.getElementsByClassName("modal-body")[0].innerHTML="";
+   document.getElementsByClassName("modal-body")[0].innerHTML='<span style="font-size:1.5rem;font-weight:bolder;text-align:center;padding:4%;">Block this contact? Blocked contacts will no longer be able to call you or send you messages</span>'+'<br/>'+'<div style="display:block;margin:auto;"><button class="report " onclick="cancelit()">Cancel</button><button class="report " onclick="cancelit()">Block</button></div>';
+}
+function displayWallpaper(){
+   document.getElementById("wallpaper").style.display="block";
+   document.getElementsByClassName("chat-div")[0].style.display="none";
+}
+function backwallpaper(){
+   // document.getElementById("wallpaper").style.animationName="fadeOut";
+   // document.getElementById("wallpaper").style.animationDuration="1s";
+    document.getElementById("wallpaper").style.display="none";
+   console.log( document.getElementById("wallpaper"));
+   
+}
+var url;
+
+function changewallpaper(x){
+   var prev=document.getElementsByClassName("selected")[0];
+prev.className="notSelected";
+prev.style.border="0px";
+prev.style.boxShadow="0px";
+console.log(prev);
+x.className="selected";
+url=x.src;
+document.getElementsByClassName("selected")[0].style.border="1px solid black";
+document.getElementsByClassName("selected")[0].style.boxShadow="0px 12px 22px 1px #333";
+
+console.log(x);
+}
+function changeimg(){
+   second.style.backgroundImage="url(\'"+url+"\')";
+   second.style.backgroundPosition="cover";
+   second.style.backgroundRepeat="no-repeat";
+   document.getElementById("wallpaper").style.display="none";
+}
+function cancelWall(){
+   document.getElementById("wallpaper").style.display="none";
 }
