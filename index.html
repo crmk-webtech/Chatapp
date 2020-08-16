@@ -621,6 +621,38 @@
                 </div>
                 </div>
                 </div>
+                <div id="myModal4"  class="modal4" >
+                    <div class="modal-content">
+                    <div class="modal-header"><span id="modal-heading">Kartik</span><span class="close">&times;</span></div>
+                    <div class="modal-body">
+                        
+                </div>
+                </div>
+                </div>
+                <div class="col-12 col-md-8 outer " id="wallpaper">
+                    <h1 style="background-color: rgb(0,172,255);opacity: 0.8;color: white;margin:1px 0;padding: 18px;"><i class="fa fa-arrow-left" onclick="backwallpaper()"></i>&nbsp;&nbsp;&nbsp;<i class="fa fa-picture-o" aria-hidden="true"></i></i>&nbsp;Wallpaper</h1>
+                    <div id="wallpaper-scroll">
+                    <div id="wallpaperimages">
+                    <img onclick="changewallpaper(this)" src="https://free4kwallpapers.com/uploads/originals/2019/12/31/journey-painting-wallpaper.jpg" alt="wallpaper image" class="selected">
+                    <img onclick="changewallpaper(this)" src="https://i.pinimg.com/originals/78/62/c9/7862c99d184bfc60d6e2e75e7dc8df0d.jpg" alt="wallpaper image">
+                    <img onclick="changewallpaper(this)" src="https://blog.hootsuite.com/wp-content/uploads/2019/05/mobile-wallpapers-940x470-1280x720.jpg" alt="wallpaper image">
+                    <img onclick="changewallpaper(this)" src="https://files.vlad.studio/sequoia/joy/space_walk/thumbs/1024x1024.jpg" alt="wallpaper image">
+                    <img onclick="changewallpaper(this)" src="https://wallpapershome.com/images/pages/pic_h/19547.jpg" alt="wallpaper image">
+                    <img onclick="changewallpaper(this)" src="https://minimalism.life/media/pages/wallpapers/gradient-day/2590681022-1588500585/ml-wallpaper-17.jpg" alt="wallpaper image">
+                    <img onclick="changewallpaper(this)" src="https://512pixels.net/downloads/macos-wallpapers-thumbs/10-3--thumb.png" alt="wallpaper image">
+                    <img onclick="changewallpaper(this)" src="https://abduzeedo.com/sites/default/files/styles/square_1x1/public/originals/hero_wallpapers.jpg?itok=iaNq7kgO" alt="wallpaper image">
+                    <img onclick="changewallpaper(this)" src="https://horizonmusic.co.za/wp-content/uploads/2018/05/plain-backround-lines.jpg" alt="wallpaper image">
+                    <img onclick="changewallpaper(this)" src="https://design-milk.com/images/2020/04/DM-Wallpaper-2005-1680x1050-featured-460x250.jpg" alt="wallpaper image">
+                    <img onclick="changewallpaper(this)" src="https://cdn.osxdaily.com/wp-content/uploads/2018/06/macos-mojave-night-lightened-r.jpg" alt="wallpaper image">
+                    <img onclick="changewallpaper(this)" src="https://images.template.net/wp-content/uploads/2015/09/24204546/Beautiful-Flower-Wallpapers.jpg" alt="wallpaper image">
+                    </div>
+                        <div style="text-align: center;">
+                            <button class="wallpaper" onclick="changeimg()" style="outline:transparent;">Change</button>
+                            <button class="wallpaper" style="outline:transparent;"><a href="https://www.google.com/search?q=wallpaper+images&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjGwb2K7Z3rAhXpyzgGHXFXBZ0Q_AUoAXoECA4QAw&biw=1360&bih=625" target="_blank" style="text-decoration:none;color:white;">Browse</a></button>
+                            <button class="wallpaper" onclick="cancelWall()" style="outline:transparent;">Cancel</button>
+                        </div>
+                    </div>
+                    </div>
                 <div class="row" >
                     <!--Right Container-->
                     <div class="col-md-8  " id="inner">
@@ -641,11 +673,11 @@
                         <li class="chat-menu" onclick="displayPhotos()" id="photo-preview"><a href="#">Photos</a></li>
                         <li class="chat-menu" onclick="displayVideo()"><a href="#">Videos</a></li>
                         <!-- <li class="chat-menu"><a href="#">Files</a></li> -->
-                        <li class="chat-menu" onclick="displayAudio()""><a href="#">Audio</a></li>
+                        <li class="chat-menu" onclick="displayAudio()"><a href="#">Audio</a></li>
                         <li class="chat-menu" onclick="clearchat()"><a href="#">Clear</a></li>
                         <li class="chat-menu" onclick="displayReport()"><a href="#">Report</a></li>
-                        <li class="chat-menu"><a href="#">Block</a></li>
-                        <li class="chat-menu"><a href="#">Wallpaper</a></li>
+                        <li class="chat-menu" onclick="displayBlock()"><a href="#">Block</a></li>
+                        <li class="chat-menu" onclick="displayWallpaper()"><a href="#">Wallpaper</a></li>
                     </ul>
                 </div>
                 <div style="margin:37% 33%;" id="div1"><b>Tap a contact to start chatting</b><br>
