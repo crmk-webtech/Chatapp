@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
 <!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
     
     <!--font-awesome-->
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -35,7 +35,7 @@
             </div>
             <div class="col-12 options">
                 <ul>
-                <li class="option" id="preview-group"><a href="#"><i class="fa fa-users icons"></i><span> New Group</span></a></li>
+                <li class="option" id="preview-group" ><a href="#"><i class="fa fa-users icons"></i>New Group</a></li>
                 <li class="option" id="preview-contacts"><a href="#"><i class="fa fa-user icons"></i><span> Contacts</span></a></li>
                 <li class="option" id="preview-calls"><a href="#"><i class="fa fa-phone icons"></i><span> Calls</span></a></li>
                 <li class="option" id="preview-saved"><a href="#" ><i class="fa fa-bookmark icons"></i><span> Saved messages</span></a></li>
@@ -48,7 +48,7 @@
         <!--Contacts-->
 
         <div class="col-12 col-md-6 outer " id="contacts">
-            <h3 style="position:sticky;top:0;background-color: rgb(0,172,255);opacity: 0.8;color: white;margin:1px 0;padding: 18px;"><i class="fa fa-arrow-left" onclick="backcontact()"></i>&nbsp;&nbsp;&nbsp;<i class="fa fa-user" style="margin-left:7%"></i>&nbsp;Contacts</h3>
+            <h3 style="position:sticky;top:0;background-color: #2088CB;color: white;margin:1px 0;padding: 18px;"><i class="fa fa-arrow-left" onclick="backcontact()"></i>&nbsp;&nbsp;&nbsp;<i class="fa fa-user" style="margin-left:7%"></i>&nbsp;Contacts</h3>
             <div id="contact-scroll">
             <div style="border-bottom: 1px groove; " class="col-12" >
                         
@@ -110,19 +110,62 @@
                     </div>
                 </div>
             </div> 
+            <div style="border-bottom: 1px groove; " class="col-12" >
+                        
+                <div class="row" style="margin-bottom:2%;">
+                    <div class="col-sm-2" ><i class="fa fa-user-circle" style="margin-left:40%; margin-top:17%;font-size:4rem;"></i></div>
+                    <div class="col-sm-6">
+                        <h4>Diya</h4>
+                        <p class="user">Busy</p>
+                    </div>
+                </div>
+            </div>
+            <div style="border-bottom: 1px groove; " class="col-12" >
+                        
+                <div class="row" style="margin-bottom:2%;">
+                    <div class="col-sm-2" ><i class="fa fa-user-circle" style="margin-left:40%; margin-top:17%;font-size:4rem;"></i></div>
+                    <div class="col-sm-6">
+                        <h4>Anjali</h4>
+                        <p class="user">Typing...</p>
+                    </div>
+                </div>
+            </div>
+            <div style="border-bottom: 1px groove; " class="col-12" >
+                        
+                <div class="row" style="margin-bottom:2%;">
+                    <div class="col-sm-2" ><i class="fa fa-user-circle" style="margin-left:40%; margin-top:17%;font-size:4rem;"></i></div>
+                    <div class="col-sm-6">
+                        <h4>Vishu</h4>
+                        <p class="user">Positive vibes</p>
+                    </div>
+                </div>
+            </div>
+            <div style="border-bottom: 1px groove; " class="col-12" >
+                        
+                <div class="row" style="margin-bottom:2%;">
+                    <div class="col-sm-2" ><i class="fa fa-user-circle" style="margin-left:40%; margin-top:17%;font-size:4rem;"></i></div>
+                    <div class="col-sm-6">
+                        <h4>Navu</h4>
+                        <p class="user">Stay home, stay safe</p>
+                    </div>
+                </div>
+            </div>
         </div>
         </div>
 
         <!--Invite friends-->
 
         <div class="col-12 col-md-6 outer " id="invitefriends">
-            <h3 style="background-color: rgb(0,172,255);color: white;margin:1px 0;padding: 18px;"><i class="fa fa-arrow-left" onclick="backinvite()"></i>&nbsp;&nbsp;&nbsp;<i class="fa fa-user-plus" style="margin-left:7%;"></i>&nbsp;Invite Friends</h3>
+            <h3 style="background-color: #2088CB;color: white;margin:1px 0;padding: 18px;"><i class="fa fa-arrow-left" onclick="backinvite()"></i>&nbsp;&nbsp;&nbsp;<i class="fa fa-user-plus" style="margin-left:7%;"></i>&nbsp;Invite Friends</h3>
             <div id="invite-content" >Enjoyed using our app!!<br>Share this link with your friends and enjoy chatting</div>
             <div id="invite-link"><i class="fa fa-share-alt" aria-hidden="true"></i><input type="text" value="https://chatapp.com/server/142711047382368256" disabled><i class="fa fa-clone" aria-hidden="true"></i></div>
             <img style="top:0;left:0;height:150px;width:150px;margin-left: 35%;margin-top:3%" src="https://www.gannett-cdn.com/presto/2020/04/17/USAT/7620a49d-39e9-4db9-a96c-89f3d1deb1ae-facebookreact2.png" alt="emoji">
         </div>
+
+        <!--Settings-->
+
         <div class="col-12 col-md-6 outer " id="settings">
-            <h3 style="background-color: rgb(0,172,255);color: white;margin:1px 0;padding: 18px;"><i class="fa fa-arrow-left" onclick="back(this)"></i>&nbsp;&nbsp;&nbsp;<i class="fa fa-cogs" aria-hidden="true" style="margin-left:7%;"></i>&nbsp;Settings</h3>            <div style="text-align: right;font-size: 20px;padding: 10px;position: absolute;right: 5px;"><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a></div>
+            <h3 style="background-color: #2088CB;color: white;margin:1px 0;padding: 18px;"><i class="fa fa-arrow-left" onclick="back(this)"></i>&nbsp;&nbsp;&nbsp;<i class="fa fa-cogs" aria-hidden="true" style="margin-left:7%;"></i>&nbsp;Settings</h3>            <div style="text-align: right;font-size: 20px;padding: 10px;position: absolute;right: 5px;"><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a></div>
             <div style="width:100%;margin-top:4vh;text-align: center;"><i class="fa fa-user-circle" style="font-size:5vw;"></i><br>Charu</div>
             <div id="settings-container" style="margin-top: 3vh;">
                 <a href="#"><div class="setting-options"><i class="fa fa-bell" aria-hidden="true"></i>&nbsp;Notifications</div></a>
@@ -138,7 +181,7 @@
         <!--Calls-->
 
         <div class="col-12 col-md-6 outer " id="calls">
-            <h3 style="background-color: rgb(0,172,255);color: white;margin:1px 0;padding: 18px;"><i class="fa fa-arrow-left" onclick="backcall()"></i>&nbsp;&nbsp;&nbsp;<i class="fa fa-phone" style="margin-left:7%"></i>&nbsp;calls</h3>
+            <h3 style="background-color: #2088CB;color: white;margin:1px 0;padding: 18px;"><i class="fa fa-arrow-left" onclick="backcall()"></i>&nbsp;&nbsp;&nbsp;<i class="fa fa-phone" style="margin-left:7%"></i>&nbsp;calls</h3>
            <div id="calls-scroll">
             <div style="border-bottom: 1px groove; " class="chat" class="col-12" >
                         
@@ -246,8 +289,8 @@
 
         
                 <div class="col-12 col-md-6 outer " id="group">
-                    <h3 style="top:0;background-color: rgb(0,172,255);color: white;margin:1px 0;padding: 18px;"><i class="fa fa-arrow-left" onclick="backgroup()"></i>&nbsp;&nbsp;&nbsp;<i class="fa fa-users"style="margin-left:7%;"></i>&nbsp;New Group</h3>
-                    <div class="row" style="text-align: center;"><div class="col-12"><input type="text" class="main contactsearch" style="width:80%;" placeholder="&#61442;  Search contacts to be added" size="35" id="searchbar"></div></div>
+                    <h3 style="top:0;background-color: #2088CB;color: white;margin:1px 0;padding: 18px;"><i class="fa fa-arrow-left" onclick="backgroup()"></i>&nbsp;&nbsp;&nbsp;<i class="fa fa-users"style="margin-left:7%;"></i>&nbsp;New Group</h3>
+                    <div class="row" style="text-align: center;"><div class="col-12"><input type="text" class="main contactsearch" style="width:90%;" placeholder="&#61442;  Search contacts to be added" size="35" id="searchbar"></div></div>
                     <div id="group-scroll">
 
                     <div style="border-bottom: 1px groove;  " class="col-12" >
@@ -328,12 +371,65 @@
                             </div> 
                         </div>
                     </div> 
+                    <div style="border-bottom: 1px groove;  " class="col-12" >
+                                
+                        <div class="row" style="margin-bottom:2%">
+                            <div class="col-sm-2" ><i class="fa fa-user-circle" style="margin-left:40%; margin-top:17%;font-size:4rem;"></i></div>
+                            <div class="col-sm-6">
+                                <h4>Anjali</h4>
+                                <p class="user">Typing...</p>
+                            </div>
+                            <div class="col-sm-2" style="float:right;margin-top:4vh;">
+                                <p style="font-size:20px;" class="plus"><i class="fa fa-plus" aria-hidden="true"></i></p>
+                            </div>  
+                        </div>
+                    </div> 
+                    <div style="border-bottom: 1px groove;  " class="col-12" >
+                                
+                        <div class="row" style="margin-bottom:2%">
+                            <div class="col-sm-2" ><i class="fa fa-user-circle" style="margin-left:40%; margin-top:17%;font-size:4rem;"></i></div>
+                            <div class="col-sm-6">
+                                <h4>Diya</h4>
+                                <p class="user">Bye</p>
+                            </div>
+                            <div class="col-sm-2" style="float:right;margin-top:4vh;">
+                                <p style="font-size:20px;" class="plus"><i class="fa fa-plus" aria-hidden="true"></i></p>
+                            </div>  
+                        </div>
+                    </div>  
+                    <div style="border-bottom: 1px groove;  " class="col-12" >
+                                
+                        <div class="row" style="margin-bottom:2%">
+                            <div class="col-sm-2" ><i class="fa fa-user-circle" style="margin-left:40%; margin-top:17%;font-size:4rem;"></i></div>
+                            <div class="col-sm-6">
+                                <h4>Vishu</h4>
+                                <p class="user">Positive vibes</p>
+                            </div>
+                            <div class="col-sm-2" style="float:right;margin-top:4vh;">
+                                <p style="font-size:20px;" class="plus"><i class="fa fa-plus" aria-hidden="true"></i></p>
+                            </div>  
+                        </div>
+                    </div> 
+                    <div style="border-bottom: 1px groove;  " class="col-12" >
+                                
+                        <div class="row" style="margin-bottom:2%">
+                            <div class="col-sm-2" ><i class="fa fa-user-circle" style="margin-left:40%; margin-top:17%;font-size:4rem;"></i></div>
+                            <div class="col-sm-6">
+                                <h4>Navu</h4>
+                                <p class="user">Stay home.stay safe</p>
+                            </div>
+                            <div class="col-sm-2" style="float:right;margin-top:4vh;">
+                                <p style="font-size:20px;" class="plus"><i class="fa fa-plus" aria-hidden="true"></i></p>
+                            </div>  
+                        </div>
+                    </div>        
                 </div>
                 </div>
 
                 <!--Saved messages-->
+
                 <div class="col-12 col-md-6 outer " id="saved">
-                    <h3 style="position:sticky;top:0;background-color: rgb(0,172,255);color: white;margin:1px 0;padding: 18px;"><i class="fa fa-arrow-left" onclick="backsaved()"></i>&nbsp;&nbsp;&nbsp;<i class="fa fa-bookmark" style="margin-left:7%;"></i>&nbsp;Saved Messages</h3>
+                    <h3 style="position:sticky;top:0;background-color: #2088CB;color: white;margin:1px 0;padding: 18px;"><i class="fa fa-arrow-left" onclick="backsaved()"></i>&nbsp;&nbsp;&nbsp;<i class="fa fa-bookmark" style="margin-left:7%;"></i>&nbsp;Saved Messages</h3>
                     <div id="saved-scroll">
                     <div style="border-bottom: 1px groove; " class="col-12" >
                                 
@@ -413,6 +509,58 @@
                             </div>
                         </div>
                     </div> 
+                    <div style="border-bottom: 1px groove; " class="col-12" >
+                                
+                        <div class="row" style="margin-bottom: 1%;">
+                            <div class="col-sm-2" ><i class="fa fa-user-circle" style="margin-left:40%; margin-top:17%;font-size:4rem;"></i></div>
+                            <div class="col-sm-6">
+                                <h4>Diya</h4>
+                                <span>27/6/2020</span><p class="color-green">- Busy</p>
+                            </div>
+                            <div class="col-sm-2" style="float:right;margin-top:4vh;">
+                                <p style="font-size:20px;" class="save"><i class="fa fa-bookmark filledsave" aria-hidden="true"></i><i class="fa fa-bookmark-o emptysave" aria-hidden="true"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="border-bottom: 1px groove; " class="col-12" >
+                                
+                        <div class="row" style="margin-bottom: 1%;">
+                            <div class="col-sm-2" ><i class="fa fa-user-circle" style="margin-left:40%; margin-top:17%;font-size:4rem;"></i></div>
+                            <div class="col-sm-6">
+                                <h4>Anjali</h4>
+                                <span>25/6/2020</span><p class="color-green">- Typing...</p>
+                            </div>
+                            <div class="col-sm-2" style="float:right;margin-top:4vh;">
+                                <p style="font-size:20px;" class="save"><i class="fa fa-bookmark filledsave" aria-hidden="true"></i><i class="fa fa-bookmark-o emptysave" aria-hidden="true"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="border-bottom: 1px groove; " class="col-12" >
+                                
+                        <div class="row" style="margin-bottom: 1%;">
+                            <div class="col-sm-2" ><i class="fa fa-user-circle" style="margin-left:40%; margin-top:17%;font-size:4rem;"></i></div>
+                            <div class="col-sm-6">
+                                <h4>Vishu</h4>
+                                <span>20/6/2020</span><p class="color-green">- Positive vibes</p>
+                            </div>
+                            <div class="col-sm-2" style="float:right;margin-top:4vh;">
+                                <p style="font-size:20px;" class="save"><i class="fa fa-bookmark filledsave" aria-hidden="true"></i><i class="fa fa-bookmark-o emptysave" aria-hidden="true"></i></p>
+                            </div>
+                        </div>
+                    </div>  
+                    <div style="border-bottom: 1px groove; " class="col-12" >
+                                
+                        <div class="row" style="margin-bottom: 1%;">
+                            <div class="col-sm-2" ><i class="fa fa-user-circle" style="margin-left:40%; margin-top:17%;font-size:4rem;"></i></div>
+                            <div class="col-sm-6">
+                                <h4>Navu</h4>
+                                <span>1/6/2020</span><p class="color-green">- stay home,stay safe</p>
+                            </div>
+                            <div class="col-sm-2" style="float:right;margin-top:4vh;">
+                                <p style="font-size:20px;" class="save"><i class="fa fa-bookmark filledsave" aria-hidden="true"></i><i class="fa fa-bookmark-o emptysave" aria-hidden="true"></i></p>
+                            </div>
+                        </div>
+                    </div>      
                 </div>
                 </div>
               
@@ -433,7 +581,7 @@
                             &nbsp;Chat app</div>
                         </div>
                     </div>
-                    <div class="row "><div class="col-12 search"><input type="text" class="main" placeholder="&#61442;  Search.." size="35" id="searchbar"></div></div>
+                    <div class="row "><div class="col-12 search" style="width:30%;"><input type="text" class="main" placeholder="&#61442;  Search.."  id="searchbar"></div></div>
                     <div style="overflow-y: scroll;overflow-x:hidden;height:71vh; width:100%; margin-top:22vh;">
                     <div  class="row">
                        
@@ -442,28 +590,28 @@
                             
                             <div style="border-bottom: 1px groove; " id="chat2" class="chat" class="col-12">
                                 <div class="row" >
-                                    <div class="col-sm-2" ><i class="fa fa-user-circle" style="margin-left:40%; margin-top:17%;font-size:4rem;"></i></div>
+                                    <div class="col-sm-2" ><i class="fa fa-user-circle" style="margin-left:40%; margin-top:17%;font-size:3.3rem;"></i></div>
                                     <div class="col-sm-6">
                                         <h4>Raghav</h4>
                                 <p>bye</p>
                                 <div style="display:none" id="raghav"></div>
                                     </div>
-                                    <div class="col-sm-2">
-                                        <p>2/8/2020</p>
+                                    <div class="col-sm-3"  style="vertical-align: middle; margin-top: 2%;">
+                                        <p>18/8/2020</p>
                                         
                                     </div>
                             </div>
                             </div>
                             <div style="border-bottom: 1px groove; " id="chat1" class="chat" class="col-12">
                                 <div class="row" >
-                                    <div class="col-sm-2" ><i class="fa fa-user-circle" style="margin-left:40%; margin-top:17%;font-size:4rem;"></i></div>
+                                    <div class="col-sm-2" ><i class="fa fa-user-circle" style="margin-left:40%; margin-top:17%;font-size:3.3rem;"></i></div>
                                     <div class="col-sm-6">
                                         <h4>Kartik</h4>
                                 <p>bye</p>
                                 <div style="display:none" id="kartik"></div>
                                     </div>
-                                    <div class="col-sm-2">
-                                        <p>2/8/2020</p>
+                                    <div  class="col-sm-3"  style="vertical-align: middle; margin-top: 2%;">
+                                        <p>18/8/2020</p>
                                         
                                     </div>
                             </div>
@@ -471,14 +619,14 @@
                         
                             <div style="border-bottom: 1px groove; " class="chat" class="col-12">
                                 <div class="row" >
-                                    <div class="col-sm-2" ><i class="fa fa-user-circle" style="margin-left:40%; margin-top:17%;font-size:4rem;"></i></div>
+                                    <div class="col-sm-2" ><i class="fa fa-user-circle" style="margin-left:40%; margin-top:17%;font-size:3.3rem;"></i></div>
                                     <div class="col-sm-6">
                                         <h4>Mridul</h4>
                                         
-                                <p>hii</p>
+                                <p>Hey! listen</p>
                                     </div>
-                                    <div class="col-sm-2">
-                                        <p>2/8/2020</p>
+                                    <div  class="col-sm-3"  style="vertical-align: middle; margin-top: 2%;">
+                                        <p>17/8/2020</p>
                                         
                                     </div>
                             </div>
@@ -486,14 +634,14 @@
                         
                             <div style="border-bottom: 1px groove; " class="chat"  class="col-12">
                                 <div class="row" >
-                                    <div class="col-sm-2" ><i class="fa fa-user-circle" style="margin-left:40%; margin-top:17%;font-size:4rem;"></i></div>
+                                    <div class="col-sm-2" ><i class="fa fa-user-circle" style="margin-left:40%; margin-top:17%;font-size:3.3rem;"></i></div>
                                     <div class="col-sm-6">
                                         <h4>Priya</h4>
                                         
-                                <p>hii</p>
+                                <p>Done</p>
                                     </div>
-                                    <div class="col-sm-2">
-                                        <p>2/8/2020</p>
+                                    <div  class="col-sm-3"  style="vertical-align: middle; margin-top: 2%;">
+                                        <p>16/8/2020</p>
                                         
                                     </div>
                             </div>
@@ -501,14 +649,14 @@
                        
                             <div style="border-bottom: 1px groove; " class="chat" class="col-12">
                                 <div class="row" >
-                                    <div class="col-sm-2" ><i class="fa fa-user-circle" style="margin-left:40%; margin-top:17%;font-size:4rem;"></i></div>
+                                    <div class="col-sm-2" ><i class="fa fa-user-circle" style="margin-left:40%; margin-top:17%;font-size:3.3rem;"></i></div>
                                     <div class="col-sm-6">
                                         <h4>Rahul</h4>
                                         
-                                <p>hii</p>
+                                <p>&#128540; &#128540;</p>
                                     </div>
-                                    <div class="col-sm-2">
-                                        <p>2/8/2020</p>
+                                    <div  class="col-sm-3"  style="vertical-align: middle; margin-top: 2%;">
+                                        <p>10/8/2020</p>
                                         
                                     </div>
                             </div>
@@ -516,13 +664,13 @@
                         
                             <div style="border-bottom: 1px groove; " class="chat" class="col-12">
                                 <div class="row" >
-                                    <div class="col-sm-2" ><i class="fa fa-user-circle" style="margin-left:40%; margin-top:17%;font-size:4rem;"></i></div>
+                                    <div class="col-sm-2" ><i class="fa fa-user-circle" style="margin-left:40%; margin-top:17%;font-size:3.3rem;"></i></div>
                                     <div class="col-sm-6">
                                         <h4>Diya</h4>
                                         
-                                <p>hii</p>
+                                <p>Nope</p>
                                     </div>
-                                    <div class="col-sm-2">
+                                    <div  class="col-sm-3"  style="vertical-align: middle; margin-top: 2%;">
                                         <p>2/8/2020</p>
                                         
                                     </div>
@@ -531,29 +679,216 @@
                         
                             <div style="border-bottom: 1px groove; " class="chat" class="col-12">
                                 <div class="row" >
-                                    <div class="col-sm-2" ><i class="fa fa-user-circle" style="margin-left:40%; margin-top:17%;font-size:4rem;"></i></div>
+                                    <div class="col-sm-2" ><i class="fa fa-user-circle" style="margin-left:40%; margin-top:17%;font-size:3.3rem;"></i></div>
                                     <div class="col-sm-6">
                                         <h4>Anjali</h4>
                                         
-                                <p>hii</p>
+                                <p>for sure</p>
                                     </div>
-                                    <div class="col-sm-2">
-                                        <p>2/8/2020</p>
+                                    <div  class="col-sm-3"  style="vertical-align: middle; margin-top: 2%;">
+                                        <p>31/7/2020</p>
+                                        
+                                    </div>
+                            </div>
+                            </div>
+                            <div style="border-bottom: 1px groove; " class="chat" class="col-12">
+                                <div class="row" >
+                                    <div class="col-sm-2" ><i class="fa fa-user-circle" style="margin-left:40%; margin-top:17%;font-size:3.3rem;"></i></div>
+                                    <div class="col-sm-6">
+                                        <h4>Vishu</h4>
+                                        
+                                <p>ok</p>
+                                    </div>
+                                    <div  class="col-sm-3"  style="vertical-align: middle; margin-top: 2%;">
+                                        <p>27/7/2020</p>
+                                        
+                                    </div>
+                            </div>
+                            </div>
+                            <div style="border-bottom: 1px groove; " class="chat" class="col-12">
+                                <div class="row" >
+                                    <div class="col-sm-2" ><i class="fa fa-user-circle" style="margin-left:40%; margin-top:17%;font-size:3.3rem;"></i></div>
+                                    <div class="col-sm-6">
+                                        <h4>Navu</h4>
+                                        
+                                <p>&#x1F606;</p>
+                                    </div>
+                                    <div  class="col-sm-3"  style="vertical-align: middle; margin-top: 2%;">
+                                        <p>12/7/2020</p>
+                                        
+                                    </div>
+                            </div>
+                            </div>
+                            
+                        
+                            <div style="border-bottom: 1px groove; " class="chat" class="col-12">
+                                <div class="row" >
+                                    <div class="col-sm-2" ><i class="fa fa-user-circle" style="margin-left:40%; margin-top:17%;font-size:3.3rem;"></i></div>
+                                    <div class="col-sm-6">
+                                        <h4>Z1 Official</h4>
+                                        
+                                <p>Kartik: Okay mam</p>
+                                    </div>
+                                    <div  class="col-sm-3"  style="vertical-align: middle; margin-top: 2%;">
+                                        <p>10/7/2020</p>
                                         
                                     </div>
                             </div>
                             </div>
                         
-                            <div style="border-bottom: 1px groove; " class="chat" class="col-12"></div>
-                        
-                            <div style="border-bottom: 1px groove; " class="chat" class="col-12"></div>
+                            <div style="border-bottom: 1px groove; " class="chat" class="col-12">
+                            
+                                <div class="row" >
+                                    <div class="col-sm-2" ><i class="fa fa-user-circle" style="margin-left:40%; margin-top:17%;font-size:3.3rem;"></i></div>
+                                    <div class="col-sm-6">
+                                        <h4>Coding Ninjas</h4>
+                                        
+                                <p>Guys register for this webinar</p>
+                                    </div>
+                                    <div  class="col-sm-3"  style="vertical-align: middle; margin-top: 2%;">
+                                        <p>6/7/2020</p>
+                                        
+                                    </div>
+                            </div></div>
                        
-                            <div style="border-bottom: 1px groove; " class="chat" class="col-12"></div>
+                            <div style="border-bottom: 1px groove; " class="chat" class="col-12">
+                                <div class="row" >
+                                    <div class="col-sm-2" ><i class="fa fa-user-circle" style="margin-left:40%; margin-top:17%;font-size:3.3rem;"></i></div>
+                                    <div class="col-sm-6">
+                                        <h4>Ritika</h4>
+                                        
+                                <p>&#x1F609;</p>
+                                    </div>
+                                    <div  class="col-sm-3"  style="vertical-align: middle; margin-top: 2%;">
+                                        <p>1/7/2020</p>
+                                        
+                                    </div>
+                            </div>
+                            </div>
                         
-                            <div style="border-bottom: 1px groove; " class="chat" class="col-12"></div>
+                            <div style="border-bottom: 1px groove; " class="chat" class="col-12">
+                                <div class="row" >
+                                    <div class="col-sm-2" ><i class="fa fa-user-circle" style="margin-left:40%; margin-top:17%;font-size:3.3rem;"></i></div>
+                                    <div class="col-sm-6">
+                                        <h4>Tanya</h4>
+                                        
+                                <p>You blocked this contact. Tap to unblock.</p>
+                                    </div>
+                                    <div  class="col-sm-3"  style="vertical-align: middle; margin-top: 2%;">
+                                        <p>23/6/2020</p>
+                                        
+                                    </div>
+                            </div></div>
                         
-                            <div style="border-bottom: 1px groove; " class="chat" class="col-12"></div>
+                            <div style="border-bottom: 1px groove; " class="chat" class="col-12">
+                                <div class="row" >
+                                    <div class="col-sm-2" ><i class="fa fa-user-circle" style="margin-left:40%; margin-top:17%;font-size:3.3rem;"></i></div>
+                                    <div class="col-sm-6">
+                                        <h4>Tisha</h4>
+                                        
+                                <p>Thanks</p>
+                                    </div>
+                                    <div  class="col-sm-3"  style="vertical-align: middle; margin-top: 2%;">
+                                        <p>12/6/2020</p>
+                                        
+                                    </div>
+                            </div>
+                            </div>
     
+                            <div style="border-bottom: 1px groove; " class="chat" class="col-12">
+                                <div class="row" >
+                                    <div class="col-sm-2" ><i class="fa fa-user-circle" style="margin-left:40%; margin-top:17%;font-size:3.3rem;"></i></div>
+                                    <div class="col-sm-6">
+                                        <h4>Janvi</h4>
+                                        
+                                <p>bus jari ha</p>
+                                    </div>
+                                    <div  class="col-sm-3"  style="vertical-align: middle; margin-top: 2%;">
+                                        <p>10/6/2020</p>
+                                        
+                                    </div>
+                            </div>
+                            </div>
+                        
+                            <div style="border-bottom: 1px groove; " class="chat" class="col-12">
+                                <div class="row" >
+                                    <div class="col-sm-2" ><i class="fa fa-user-circle" style="margin-left:40%; margin-top:17%;font-size:3.3rem;"></i></div>
+                                    <div class="col-sm-6">
+                                        <h4>Kiara</h4>
+                                        
+                                <p>Assignment dede yr</p>
+                                    </div>
+                                    <div  class="col-sm-3"  style="vertical-align: middle; margin-top: 2%;">
+                                        <p>2/6/2020</p>
+                                        
+                                    </div>
+                            </div>
+                            </div>
+                       
+                            <div style="border-bottom: 1px groove; " class="chat" class="col-12">
+                                <div class="row" >
+                                    <div class="col-sm-2" ><i class="fa fa-user-circle" style="margin-left:40%; margin-top:17%;font-size:3.3rem;"></i></div>
+                                    <div class="col-sm-6">
+                                        <h4>Vanshika</h4>
+                                        
+                                <p>File leke aayio</p>
+                                    </div>
+                                    <div  class="col-sm-3"  style="vertical-align: middle; margin-top: 2%;">
+                                        <p>31/5/2020</p>
+                                        
+                                    </div>
+                            </div>
+                            </div>
+                        
+                            <div style="border-bottom: 1px groove; " class="chat" class="col-12">
+                                <div class="row" >
+                                    <div class="col-sm-2" ><i class="fa fa-user-circle" style="margin-left:40%; margin-top:17%;font-size:3.3rem;"></i></div>
+                                    <div class="col-sm-6">
+                                        <h4>Urvashi</h4>
+                                        
+                                <p>admission ka kya scene ha</p>
+                                    </div>
+                                    <div  class="col-sm-3"  style="vertical-align: middle; margin-top: 2%;">
+                                        <p>12/7/2020</p>
+                                        
+                                    </div>
+                            </div>
+                            </div>
+                        
+                            <div style="border-bottom: 1px groove; " class="chat" class="col-12">
+                                <div class="row" >
+                                    <div class="col-sm-2" ><i class="fa fa-user-circle" style="margin-left:40%; margin-top:17%;font-size:3.3rem;"></i></div>
+                                    <div class="col-sm-6">
+                                        <h4>Just friends stuff</h4>
+                                        
+                                <p>Raghav Left</p>
+                                    </div>
+                                    <div  class="col-sm-3"  style="vertical-align: middle; margin-top: 2%;">
+                                        <p>29/5/2020</p>
+                                        
+                                    </div>
+                            </div>
+                            </div>
+                       
+                            <div style="border-bottom: 1px groove; " class="chat" class="col-12">
+                                <div class="row" >
+                                    <div class="col-sm-2" ><i class="fa fa-user-circle" style="margin-left:40%; margin-top:17%;font-size:3.3rem;"></i></div>
+                                    <div class="col-sm-6">
+                                        <h4>Divya</h4>
+                                        
+                                <p>bye bye</p>
+                                    </div>
+                                    <div  class="col-sm-3"  style="vertical-align: middle; margin-top: 2%;">
+                                        <p>17/5/2020</p>
+                                        
+                                    </div>
+                            </div>
+                            </div>
+                        
+                            <!-- <div style="border-bottom: 1px groove; " class="chat" class="col-12"></div>
+                        
+                            <div style="border-bottom: 1px groove; " class="chat" class="col-12"></div>
+                        
                             <div style="border-bottom: 1px groove; " class="chat" class="col-12"></div>
                         
                             <div style="border-bottom: 1px groove; " class="chat" class="col-12"></div>
@@ -562,23 +897,7 @@
                         
                             <div style="border-bottom: 1px groove; " class="chat" class="col-12"></div>
                         
-                            <div style="border-bottom: 1px groove; " class="chat" class="col-12"></div>
-                       
-                            <div style="border-bottom: 1px groove; " class="chat" class="col-12"></div>
-                        
-                            <div style="border-bottom: 1px groove; " class="chat" class="col-12"></div>
-                        
-                            <div style="border-bottom: 1px groove; " class="chat" class="col-12"></div>
-                        
-                            <div style="border-bottom: 1px groove; " class="chat" class="col-12"></div>
-                        
-                            <div style="border-bottom: 1px groove; " class="chat" class="col-12"></div>
-                       
-                            <div style="border-bottom: 1px groove; " class="chat" class="col-12"></div>
-                        
-                            <div style="border-bottom: 1px groove; " class="chat" class="col-12"></div>
-                        
-                            <div style="border-bottom: 1px groove; " class="chat" class="col-12"></div>
+                            <div style="border-bottom: 1px groove; " class="chat" class="col-12"></div> -->
                             </div>
                     </div>
                 </div>
@@ -630,7 +949,7 @@
                 </div>
                 </div>
                 <div class="col-12 col-md-8 outer " id="wallpaper">
-                    <h1 style="background-color: rgb(0,172,255);opacity: 0.8;color: white;margin:1px 0;padding: 18px;"><i class="fa fa-arrow-left" onclick="backwallpaper()"></i>&nbsp;&nbsp;&nbsp;<i class="fa fa-picture-o" aria-hidden="true"></i></i>&nbsp;Wallpaper</h1>
+                    <h3 style="background-color: #2088CB;color: white;margin:1px 0;padding: 18px;"><i class="fa fa-picture-o" aria-hidden="true"></i></i>&nbsp;Wallpaper<i class="fa fa-times" style="float:right" onclick="backwallpaper()"></i></h3>
                     <div id="wallpaper-scroll">
                     <div id="wallpaperimages">
                     <img onclick="changewallpaper(this)" src="https://free4kwallpapers.com/uploads/originals/2019/12/31/journey-painting-wallpaper.jpg" alt="wallpaper image" class="selected">
@@ -741,14 +1060,14 @@
               </div>
               <!--Chat container-->
 
-                <div class="row" id="div2"  style="position :fixed; display:none;">
-                        <div class="col-sm-12">
+                <div class="row" id="div2"  style="position :fixed; display:none;width:100%;">
+                        <div class="col-sm-12" id="input-msg" style="width:100%;">
                             
-                            <i class="fa fa-smile-o emoji-menu"  id="menu" aria-hidden="true" ></i>
+                            <i class="fa fa-smile-o emoji-menu"  id="menu" aria-hidden="true" style="vertical-align:middle;font-size:28px;background-color:white;padding:1px;box-sizing: border-box;"></i>
                         
-                            <input type="text" id="input"  style="width:770px;margin-left:5px;padding:3px;padding-left:10px;font-size:2rem;">
+                            <input type="text" id="input"  style="width:60%;font-size:2rem;vertical-align:middle;padding:2px;padding-left:5px;">
                    
-                            <button id="btn" ><i class ="fa fa-paper-plane-o" id="send"></i></button>
+                            <button id="btn" style="vertical-align: middle;padding:4px;"><i class ="fa fa-play" style="font-size:1.5rem;vertical-align: middle"id="send"></i></button>
                     
                             
                         </div>
@@ -759,7 +1078,12 @@
     </div>
     
 </body>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <script src="js/scripts.js"></script>
 <script  src="https://code.jquery.com/jquery-3.1.1.min.js"  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="  crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" ></script>
