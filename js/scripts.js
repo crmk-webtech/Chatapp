@@ -36,7 +36,7 @@ chat2.addEventListener("click",function(){
    div.style.height="70vh";
    div.className="raghav";
    //document.getElementById("second").display.backgroundColor="";
-   document.getElementById("chat-user").innerHTML="<span><span style='font-size:2rem;'><i class='fa fa-user' style='vertical-align:middle'></i>&nbsp;&nbsp;&nbsp;Raghav</span><br>last seen 1 min ago</span>"
+   document.getElementById("chat-user").innerHTML="<span style='margin-top:5px'><span style='font-size:2rem;'><i class='fa fa-user-circle-o' style='vertical-align:middle;font-size:2.5rem;margin-top:5px;'></i>&nbsp;&nbsp;&nbsp;Raghav</span><br><span style='margin-left:40px;'>online</span></span>"
    console.log(div.className);
    document.getElementById("ellipsis").style.display="block";
    document.getElementById("inner-search").style.display="block";
@@ -105,7 +105,7 @@ document.getElementById("ellipsis").style.display="block";
    document.getElementById("inner-search").style.display="block";
    
 
-document.getElementById("chat-user").innerHTML="<span><span style='font-size:2rem'><i class='fa fa-user' style='vertical-align:middle'></i>&nbsp;&nbsp;&nbsp;Kartik</span><br><span style='margin-left:3%'>online</span></span>";
+   document.getElementById("chat-user").innerHTML="<span style='margin-top:5px'><span style='font-size:2rem;'><i class='fa fa-user-circle-o' style='vertical-align:middle;font-size:2.5rem;margin-top:5px;'></i>&nbsp;&nbsp;&nbsp;Kartik</span><br><span style='margin-left:40px;'>online</span></span>"
 document.getElementById("div2").style.display="block";
 if(wct1==0){
 document.getElementById("second").style.backgroundImage="url('https://i.pinimg.com/originals/5c/f2/66/5cf2660af5f4214def7166dc7a7c8062.jpg')";
