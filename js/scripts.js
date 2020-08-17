@@ -10,14 +10,14 @@ div.scrollTop = div.scrollHeight;
 const chat=document.getElementById("chat1");
 const chat2=document.getElementById("chat2");
 let chatk=1,chatr=1,refr=1,refk=1;
-var clicked;
+var clicked,wct=0;
 //console.log(chat);
 //console.log(document.getElementById("div1").innerHTML); 
 const raghav=document.getElementById("raghav");
 const kartik=document.getElementById("kartik");
 chat2.addEventListener("click",function(){
    //console.log("executedfirst")
-   chat2.style.backgroundColor="rgb(0,172,255)";
+   chat2.style.backgroundColor=" #2088CB";
 
    chat2.style.color="white";
    chat.style.backgroundColor="white";
@@ -36,39 +36,42 @@ chat2.addEventListener("click",function(){
    div.style.height="70vh";
    div.className="raghav";
    //document.getElementById("second").display.backgroundColor="";
-   document.getElementById("chat-user").innerHTML="<span><span style='font-size:2rem'>Raghav</span><br>last seen 1 min ago</span>"
+   document.getElementById("chat-user").innerHTML="<span><span style='font-size:2rem;'><i class='fa fa-user' style='vertical-align:middle'></i>&nbsp;&nbsp;&nbsp;Raghav</span><br>last seen 1 min ago</span>"
    console.log(div.className);
    document.getElementById("ellipsis").style.display="block";
    document.getElementById("inner-search").style.display="block";
    document.getElementById("div2").style.display="block";
-   document.getElementById("second").style.backgroundImage="url('https://ak.picdn.net/shutterstock/videos/14755141/thumb/2.jpg')";
+   if(wct===0){
+   document.getElementById("second").style.backgroundImage="url('https://wallpaperaccess.com/full/121182.jpg')";}
+else{
+  second.style.backgroundImage="url('"+rurl+"')";
+}
 document.getElementById("second").style.backgroundRepeat="no-repeat";
 document.getElementById("second").style.backgroundSize="cover";
-document.getElementById("second").style.backgroundPosition="right";
    if(chatr===1){
      // console.log("inner-chat");
     
     
-raghav.insertAdjacentHTML("beforeend","<label style='border:1px solid black;margin-right:2%; background-color:white; font-size:1.5rem;padding:5px;border-radius:20px;'>hellooo</label><br><br>")
-raghav.insertAdjacentHTML("beforeend","<label style='border:1px solid black;margin-right:2%; background-color:rgb(0,172,255); font-size:1.5rem;padding:5px;border-radius:20px;float:right;'>hiiii</label><br><br>")
-raghav.insertAdjacentHTML("beforeend","<label style='border:1px solid black;margin-right:2%; background-color:white; font-size:1.5rem;padding:5px;border-radius:20px;'>kya hal chal</label><br><br>")
-raghav.insertAdjacentHTML("beforeend","<label style='border:1px solid black;margin-right:2%; background-color:rgb(0,172,255); font-size:1.5rem;padding:5px;border-radius:20px;float:right;'>m bdia tu bta</label><br><br>")
-raghav.insertAdjacentHTML("beforeend","<label style='border:1px solid black;margin-right:2%; background-color:white; font-size:1.5rem;padding:5px;border-radius:20px;'>bs bdia</label><br><br>")
-raghav.insertAdjacentHTML("beforeend","<label style='border:1px solid black;margin-right:2%; background-color:white; font-size:1.5rem;padding:5px;border-radius:20px;'>or kya krra h ajkl</label><br><br>")
-raghav.insertAdjacentHTML("beforeend","<label style='border:1px solid black;margin-right:2%; background-color:rgb(0,172,255); font-size:1.5rem;padding:5px;border-radius:20px;float:right;'>kuch  nhi yr time pass</label><br><br>")
-raghav.insertAdjacentHTML("beforeend","<label style='border:1px solid black;margin-right:2%; background-color:white; font-size:1.5rem;padding:5px;border-radius:20px;'>lockdown se preshan hogye yr</label><br><br>")
-raghav.insertAdjacentHTML("beforeend","<label style='border:1px solid black;margin-right:2%; background-color:rgb(0,172,255); font-size:1.5rem;padding:5px;border-radius:20px;float:right;'>han yr bot jada ab  to mn krta h bhag jao bs</label><br><br>")
-raghav.insertAdjacentHTML("beforeend","<label style='border:1px solid black;margin-right:2%; background-color:white; font-size:1.5rem;padding:5px;border-radius:20px;'>hnn</label><br><br>")
-raghav.insertAdjacentHTML("beforeend","<label style='border:1px solid black;margin-right:2%; background-color:white; font-size:1.5rem;padding:5px;border-radius:20px;'>or kuch kam krra h??</label><br><br>")
-raghav.insertAdjacentHTML("beforeend","<label style='border:1px solid black;margin-right:2%; background-color:rgb(0,172,255); font-size:1.5rem;padding:5px;border-radius:20px;float:right;'>khan mn e n krta kuch krne ka</label><br><br>")
-raghav.insertAdjacentHTML("beforeend","<label style='border:1px solid black;margin-right:2%; background-color:rgb(0,172,255); font-size:1.5rem;padding:5px;border-radius:20px;float:right;'>pda rhta hu pura din mobile pr</label><br><br>")
-raghav.insertAdjacentHTML("beforeend","<label style='border:1px solid black;margin-right:2%; background-color:rgb(0,172,255); font-size:1.5rem;padding:5px;border-radius:20px;float:right;'>tune kia kuch</label><br><br>")
-raghav.insertAdjacentHTML("beforeend","<label style='border:1px solid black;margin-right:2%; background-color:white; font-size:1.5rem;padding:5px;border-radius:20px;'>bs same e halat h</label><br><br>")
-raghav.insertAdjacentHTML("beforeend","<label style='border:1px solid black;margin-right:2%; background-color:white; font-size:1.5rem;padding:5px;border-radius:20px;'>or bta sb bdia</label><br><br>")
-raghav.insertAdjacentHTML("beforeend","<label style='border:1px solid black;margin-right:2%; background-color:rgb(0,172,255); font-size:1.5rem;padding:5px;border-radius:20px;float:right;'>hnn sb bdia</label><br><br>")
-raghav.insertAdjacentHTML("beforeend","<label style='border:1px solid black;margin-right:2%; background-color:rgb(0,172,255); font-size:1.5rem;padding:5px;border-radius:20px;float:right;'>baad mein krte ha baat</label><br><br>")
-raghav.insertAdjacentHTML("beforeend","<label style='border:1px solid black;margin-right:2%; background-color:rgb(0,172,255); font-size:1.5rem;padding:5px;border-radius:20px;float:right;'>Bye</label><br><br>")
-raghav.insertAdjacentHTML("beforeend","<label style='border:1px solid black;margin-right:2%; background-color:white; font-size:1.5rem;padding:5px;border-radius:20px;'>bye</label><br><br>")
+raghav.insertAdjacentHTML("beforeend","<label style='margin-right:2%; background-color:white; font-size:1.5rem;padding:5px;border-radius:20px;'>hellooo</label><br><br>")
+raghav.insertAdjacentHTML("beforeend","<label style='margin-right:2%; background-color:#2088CB;color:white; font-size:1.5rem;padding:5px;border-radius:20px;float:right;'>hiiii</label><br><br>")
+raghav.insertAdjacentHTML("beforeend","<label style='margin-right:2%; background-color:white; font-size:1.5rem;padding:5px;border-radius:20px;'>kya hal chal</label><br><br>")
+raghav.insertAdjacentHTML("beforeend","<label style='margin-right:2%; background-color:#2088CB;color:white; font-size:1.5rem;padding:5px;border-radius:20px;float:right;'>m bdia tu bta</label><br><br>")
+raghav.insertAdjacentHTML("beforeend","<label style='margin-right:2%; background-color:white; font-size:1.5rem;padding:5px;border-radius:20px;'>bs bdia</label><br><br>")
+raghav.insertAdjacentHTML("beforeend","<label style='margin-right:2%; background-color:white; font-size:1.5rem;padding:5px;border-radius:20px;'>or kya krra h ajkl</label><br><br>")
+raghav.insertAdjacentHTML("beforeend","<label style='margin-right:2%; background-color:#2088CB;color:white; font-size:1.5rem;padding:5px;border-radius:20px;float:right;'>kuch  nhi yr time pass</label><br><br>")
+raghav.insertAdjacentHTML("beforeend","<label style='margin-right:2%; background-color:white; font-size:1.5rem;padding:5px;border-radius:20px;'>lockdown se preshan hogye yr</label><br><br>")
+raghav.insertAdjacentHTML("beforeend","<label style='margin-right:2%; background-color:#2088CB;color:white; font-size:1.5rem;padding:5px;border-radius:20px;float:right;'>han yr bot jada ab  to mn krta h bhag jao bs</label><br><br>")
+raghav.insertAdjacentHTML("beforeend","<label style='margin-right:2%; background-color:white; font-size:1.5rem;padding:5px;border-radius:20px;'>hnn</label><br><br>")
+raghav.insertAdjacentHTML("beforeend","<label style='margin-right:2%; background-color:white; font-size:1.5rem;padding:5px;border-radius:20px;'>or kuch kam krra h??</label><br><br>")
+raghav.insertAdjacentHTML("beforeend","<label style='margin-right:2%; background-color:#2088CB;color:white; font-size:1.5rem;padding:5px;border-radius:20px;float:right;'>khan mn e n krta kuch krne ka</label><br><br>")
+raghav.insertAdjacentHTML("beforeend","<label style='margin-right:2%; background-color:#2088CB;color:white; font-size:1.5rem;padding:5px;border-radius:20px;float:right;'>pda rhta hu pura din mobile pr</label><br><br>")
+raghav.insertAdjacentHTML("beforeend","<label style='margin-right:2%; background-color:#2088CB;color:white; font-size:1.5rem;padding:5px;border-radius:20px;float:right;'>tune kia kuch</label><br><br>")
+raghav.insertAdjacentHTML("beforeend","<label style='margin-right:2%; background-color:white; font-size:1.5rem;padding:5px;border-radius:20px;'>bs same e halat h</label><br><br>")
+raghav.insertAdjacentHTML("beforeend","<label style='margin-right:2%; background-color:white; font-size:1.5rem;padding:5px;border-radius:20px;'>or bta sb bdia</label><br><br>")
+raghav.insertAdjacentHTML("beforeend","<label style='margin-right:2%; background-color:#2088CB;color:white; font-size:1.5rem;padding:5px;border-radius:20px;float:right;'>hnn sb bdia</label><br><br>")
+raghav.insertAdjacentHTML("beforeend","<label style='margin-right:2%; background-color:#2088CB;color:white; font-size:1.5rem;padding:5px;border-radius:20px;float:right;'>baad mein krte ha baat</label><br><br>")
+raghav.insertAdjacentHTML("beforeend","<label style='margin-right:2%; background-color:#2088CB;color:white; font-size:1.5rem;padding:5px;border-radius:20px;float:right;'>Bye</label><br><br>")
+raghav.insertAdjacentHTML("beforeend","<label style='margin-right:2%; background-color:white; font-size:1.5rem;padding:5px;border-radius:20px;'>bye</label><br><br>")
    }
    chatr++;
    div.innerHTML=raghav.innerHTML
@@ -76,14 +79,14 @@ raghav.insertAdjacentHTML("beforeend","<label style='border:1px solid black;marg
 updateScroll();
 })
 //console.log("******"+clicked);
+var wct1=0;
 chat.addEventListener("click",function(){
 
 //if(div.innerHTML==="<b>Tap a contact to start chatting</b>"){
    //console.log(true);
    const div2=document.getElementById("div2");
    div.innerHTML="";
-   chat.style.backgroundColor="rgb(0,172,255)";
-
+   chat.style.backgroundColor=" #2088CB";
    chat.style.color="white";
    chat2.style.backgroundColor="white";
    chat2.style.color="black";
@@ -102,35 +105,39 @@ document.getElementById("ellipsis").style.display="block";
    document.getElementById("inner-search").style.display="block";
    
 
-document.getElementById("chat-user").innerHTML="<span><span style='font-size:2rem'>Kartik</span><br>online</span>";
+document.getElementById("chat-user").innerHTML="<span><span style='font-size:2rem'><i class='fa fa-user' style='vertical-align:middle'></i>&nbsp;&nbsp;&nbsp;Kartik</span><br><span style='margin-left:3%'>online</span></span>";
 document.getElementById("div2").style.display="block";
-document.getElementById("second").style.backgroundImage="url('https://png.pngtree.com/thumb_back/fw800/background/20190221/ourmid/pngtree-flower-flower-border-romantic-simple-image_22125.jpg')";
+if(wct1==0){
+document.getElementById("second").style.backgroundImage="url('https://i.pinimg.com/originals/5c/f2/66/5cf2660af5f4214def7166dc7a7c8062.jpg')";
+}
+else{
+   second.style.backgroundImage="url(\'"+kurl+"\')";
+}
 document.getElementById("second").style.backgroundRepeat="no-repeat";
 document.getElementById("second").style.backgroundSize="cover";
-document.getElementById("second").style.backgroundPosition="right";
 if(chatk==1){
    kartik.innerHTML="";
 
-kartik.insertAdjacentHTML("beforeend","<label style='border:1px solid black;margin-right:2%; background-color:white; font-size:1.5rem;padding:5px;border-radius:20px;'>hellooo</label><br><br>")
-kartik.insertAdjacentHTML("beforeend","<label style='border:1px solid black;margin-right:2%; background-color:rgb(0,172,255); font-size:1.5rem;padding:5px;border-radius:20px;float:right;'>hiiii</label><br><br>")
-kartik.insertAdjacentHTML("beforeend","<label style='border:1px solid black;margin-right:2%; background-color:white; font-size:1.5rem;padding:5px;border-radius:20px;'>kya hal chal</label><br><br>")
-kartik.insertAdjacentHTML("beforeend","<label style='border:1px solid black;margin-right:2%; background-color:rgb(0,172,255); font-size:1.5rem;padding:5px;border-radius:20px;float:right;'>m bdia tu bta</label><br><br>")
-kartik.insertAdjacentHTML("beforeend","<label style='border:1px solid black;margin-right:2%; background-color:white; font-size:1.5rem;padding:5px;border-radius:20px;'>bs bdia</label><br><br>")
-kartik.insertAdjacentHTML("beforeend","<label style='border:1px solid black;margin-right:2%; background-color:white; font-size:1.5rem;padding:5px;border-radius:20px;'>or kya krra h ajkl</label><br><br>")
-kartik.insertAdjacentHTML("beforeend","<label style='border:1px solid black;margin-right:2%; background-color:rgb(0,172,255);font-size:1.5rem;padding:5px;border-radius:20px;float:right;'>kuch  nhi yr time pass</label><br><br>")
-kartik.insertAdjacentHTML("beforeend","<label style='border:1px solid black;margin-right:2%; background-color:white; font-size:1.5rem;padding:5px;border-radius:20px;'>lockdown se preshan hogye yr</label><br><br>")
-kartik.insertAdjacentHTML("beforeend","<label style='border:1px solid black;margin-right:2%; background-color:rgb(0,172,255);font-size:1.5rem;padding:5px;border-radius:20px;float:right;'>han yr bot jada ab  to mn krta h bhag jao bs</label><br><br>")
-kartik.insertAdjacentHTML("beforeend","<label style='border:1px solid black;margin-right:2%; background-color:white; font-size:1.5rem;padding:5px;border-radius:20px;'>hnn</label><br><br>")
-kartik.insertAdjacentHTML("beforeend","<label style='border:1px solid black;margin-right:2%; background-color:white; font-size:1.5rem;padding:5px;border-radius:20px;'>or kuch kam krra h??</label><br><br>")
-kartik.insertAdjacentHTML("beforeend","<label style='border:1px solid black;margin-right:2%; background-color:rgb(0,172,255);  font-size:1.5rem;padding:5px;border-radius:20px;float:right;'>khan mn e n krta kuch krne ka</label><br><br>")
-kartik.insertAdjacentHTML("beforeend","<label style='border:1px solid black;margin-right:2%; background-color:rgb(0,172,255); font-size:1.5rem;padding:5px;border-radius:20px;float:right;'>pda rhta hu pura din mobile pr</label><br><br>")
-kartik.insertAdjacentHTML("beforeend","<label style='border:1px solid black;margin-right:2%; background-color:rgb(0,172,255); font-size:1.5rem;padding:5px;border-radius:20px;float:right;'>tune kia kuch</label><br><br>")
-kartik.insertAdjacentHTML("beforeend","<label style='border:1px solid black;margin-right:2%; background-color:white; font-size:1.5rem;padding:5px;border-radius:20px;'>bs same e halat h</label><br><br>")
-kartik.insertAdjacentHTML("beforeend","<label style='border:1px solid black;margin-right:2%; background-color:white; font-size:1.5rem;padding:5px;border-radius:20px;'>or bta sb bdia</label><br><br>")
-kartik.insertAdjacentHTML("beforeend","<label style='border:1px solid black;margin-right:2%; background-color:rgb(0,172,255); font-size:1.5rem;padding:5px;border-radius:20px;float:right;'>hnn sb bdia</label><br><br>")
-kartik.insertAdjacentHTML("beforeend","<label style='border:1px solid black;margin-right:2%; background-color:rgb(0,172,255);  font-size:1.5rem;padding:5px;border-radius:20px;float:right;'>baad mein krte ha baat</label><br><br>")
-kartik.insertAdjacentHTML("beforeend","<label style='border:1px solid black;margin-right:2%; background-color:rgb(0,172,255); font-size:1.5rem;padding:5px;border-radius:20px;float:right;'>Bye</label><br><br>")
-kartik.insertAdjacentHTML("beforeend","<label style='border:1px solid black;margin-right:2%; background-color:white; font-size:1.5rem;padding:5px;border-radius:20px;'>bye</label><br><br>")
+kartik.insertAdjacentHTML("beforeend","<label style=';margin-right:2%; background-color:white; font-size:1.5rem;padding:5px;border-radius:20px;'>hellooo</label><br><br>")
+kartik.insertAdjacentHTML("beforeend","<label style=';margin-right:2%; background-color:#2088CB;color:white; font-size:1.5rem;padding:5px;border-radius:20px;float:right;'>hiiii</label><br><br>")
+kartik.insertAdjacentHTML("beforeend","<label style=';margin-right:2%; background-color:white; font-size:1.5rem;padding:5px;border-radius:20px;'>kya hal chal</label><br><br>")
+kartik.insertAdjacentHTML("beforeend","<label style=';margin-right:2%; background-color:#2088CB;color:white; font-size:1.5rem;padding:5px;border-radius:20px;float:right;'>m bdia tu bta</label><br><br>")
+kartik.insertAdjacentHTML("beforeend","<label style=';margin-right:2%; background-color:white; font-size:1.5rem;padding:5px;border-radius:20px;'>bs bdia</label><br><br>")
+kartik.insertAdjacentHTML("beforeend","<label style=';margin-right:2%; background-color:white; font-size:1.5rem;padding:5px;border-radius:20px;'>or kya krra h ajkl</label><br><br>")
+kartik.insertAdjacentHTML("beforeend","<label style=';margin-right:2%; background-color:#2088CB;color:white;font-size:1.5rem;padding:5px;border-radius:20px;float:right;'>kuch  nhi yr time pass</label><br><br>")
+kartik.insertAdjacentHTML("beforeend","<label style=';margin-right:2%; background-color:white; font-size:1.5rem;padding:5px;border-radius:20px;'>lockdown se preshan hogye yr</label><br><br>")
+kartik.insertAdjacentHTML("beforeend","<label style=';margin-right:2%; background-color:#2088CB;color:white;font-size:1.5rem;padding:5px;border-radius:20px;float:right;'>han yr bot jada ab  to mn krta h bhag jao bs</label><br><br>")
+kartik.insertAdjacentHTML("beforeend","<label style=';margin-right:2%; background-color:white; font-size:1.5rem;padding:5px;border-radius:20px;'>hnn</label><br><br>")
+kartik.insertAdjacentHTML("beforeend","<label style=';margin-right:2%; background-color:white; font-size:1.5rem;padding:5px;border-radius:20px;'>or kuch kam krra h??</label><br><br>")
+kartik.insertAdjacentHTML("beforeend","<label style=';margin-right:2%; background-color:#2088CB;color:white;  font-size:1.5rem;padding:5px;border-radius:20px;float:right;'>khan mn e n krta kuch krne ka</label><br><br>")
+kartik.insertAdjacentHTML("beforeend","<label style=';margin-right:2%; background-color:#2088CB;color:white; font-size:1.5rem;padding:5px;border-radius:20px;float:right;'>pda rhta hu pura din mobile pr</label><br><br>")
+kartik.insertAdjacentHTML("beforeend","<label style=';margin-right:2%; background-color:#2088CB;color:white; font-size:1.5rem;padding:5px;border-radius:20px;float:right;'>tune kia kuch</label><br><br>")
+kartik.insertAdjacentHTML("beforeend","<label style=';margin-right:2%; background-color:white; font-size:1.5rem;padding:5px;border-radius:20px;'>bs same e halat h</label><br><br>")
+kartik.insertAdjacentHTML("beforeend","<label style=';margin-right:2%; background-color:white; font-size:1.5rem;padding:5px;border-radius:20px;'>or bta sb bdia</label><br><br>")
+kartik.insertAdjacentHTML("beforeend","<label style=';margin-right:2%; background-color:#2088CB;color:white; font-size:1.5rem;padding:5px;border-radius:20px;float:right;'>hnn sb bdia</label><br><br>")
+kartik.insertAdjacentHTML("beforeend","<label style=';margin-right:2%; background-color:#2088CB;color:white;  font-size:1.5rem;padding:5px;border-radius:20px;float:right;'>baad mein krte ha baat</label><br><br>")
+kartik.insertAdjacentHTML("beforeend","<label style=';margin-right:2%; background-color:#2088CB;color:white; font-size:1.5rem;padding:5px;border-radius:20px;float:right;'>Bye</label><br><br>")
+kartik.insertAdjacentHTML("beforeend","<label style=';margin-right:2%; background-color:white; font-size:1.5rem;padding:5px;border-radius:20px;'>bye</label><br><br>")
 }
 chatk++;
 div.innerHTML=kartik.innerHTML;
@@ -149,7 +156,7 @@ const add=(i,arr2,clicked)=>{
    //console.log("''''"+clicked);
    //console.log(document.getElementById(clicked).innerHTML);
    document.getElementById(div.className).insertAdjacentHTML(
-       "beforeend", "<label style='border:1px solid black; background-color:rgb(0,172,255); font-size:1.5rem;padding:5px;border-radius:20px;'>"+arr2[i]+"</label><br><br>");
+       "beforeend", "<label style=' background-color:white; font-size:1.5rem;padding:5px;border-radius:20px;'>"+arr2[i]+"</label><br><br>");
        div.innerHTML=document.getElementById(div.className).innerHTML;
        console.log(arr2[i]);
        console.log(i);
@@ -159,7 +166,7 @@ const chats=(e)=>{
    let chat=input.value;
    //console.log("p1"+input.value+"p1");
    document.getElementById(div.className).insertAdjacentHTML(
-   "beforeend", "<label style='float:right;border:1px solid black;margin-right:2%; background-color:rgb(0,172,255);;font-size:1.5rem;padding:5px;border-radius:20px;'>"+input.value+"</label><br/><br/>"
+   "beforeend", "<label style='float:right;margin-right:2%; background-color:#2088CB;color:white;;font-size:1.5rem;padding:5px;border-radius:20px;'>"+input.value+"</label><br/><br/>"
    )
    div.innerHTML=document.getElementById(div.className).innerHTML;
    updateScroll();
@@ -338,16 +345,37 @@ function chatMenu(){
 })
 //console.log(div.className);
 function clearchat(){
-   div.innerHTML="";
-   document.getElementById(div.className).innerHTML="";
-   chatDiv.style.display="none";
+   // var x =confirm("Do u want to clear chat?");
+   swal({   title: "Your chat will be deleted permanently!",   
+    text: "Are you sure to delete chat?",   
+    type: "warning",   
+    showCancelButton: true, 
+    buttons:{
+       cancel:true,
+       confirm:"confirm"
+    }  ,
+    closeOnConfirm: false,   
+    closeOnCancel: false }).then(arg=>{
+       if(arg){
+         div.innerHTML="";
+         document.getElementById(div.className).innerHTML="";
+         chatDiv.style.display="none"; 
+       }
+    }) 
+   //  function(isConfirm){
+   //     if(isconfirm){
+         
+   //     }
+   //  })
+   // if(x){
+   // d}
 }
 const emojiMenu=document.getElementsByClassName("emoji-menu")[0];
 console.log(emojiMenu);
 emojiMenu.addEventListener("click",function(){
    document.getElementsByClassName("emoji-dashboard")[0].style.display="block";
-   document.getElementById("input").style.width="550px";
-   document.getElementById("input").style.marginLeft="220px";
+   document.getElementById("input").style.width="45%";
+  document.getElementById("input").style.marginLeft="16%";
 
 })
 const dashboard=document.getElementsByClassName("emoji-dashboard")[0];
@@ -380,7 +408,7 @@ dashboard.addEventListener("click",function(){
 dashboard.style.display="block";
 dashboard.style.position="absolute";
 dashboard.style.zIndex="10";
-input.style.width="550px";
+input.style.width="45%";
 kct++;
 })
 
@@ -390,8 +418,8 @@ document.addEventListener("click", function(event) {
      
       return}
       else{
-  input.style.width="770px";
-  input.style.marginLeft="10px";
+  input.style.width="60%";
+  input.style.marginLeft="0.5%";
   dashboard.style.display="none";
   console.log("true");
  kct=1;
@@ -456,7 +484,7 @@ function displayAudio(){
   console.log(div.className);
   header.innerHTML=div.className;
   header.style.textTransform="capitalize";
-  document.getElementsByClassName("modal1")[0].style.paddingTop="100px";
+  document.getElementsByClassName("modal")[0].style.paddingTop="100px";
   document.getElementsByClassName("modal-body")[0].innerHTML="";
   if(div.className==="raghav"){
   document.getElementsByClassName("modal-body")[0].innerHTML='<audio controls><source src="./sounds/rain.mp3"/></audio>'+'<br/>'+'<audio controls><source src="./sounds/beach.mp3"/></audio>';}
@@ -508,6 +536,7 @@ function displayBlock(){
    modal.style.display = "block";
    header.innerHTML='<span style="font-size:2.5rem">&nbsp;Block Contact</span>';
    document.getElementsByClassName("modal-body")[0].innerHTML="";
+   document.getElementsByClassName("modal")[0].style.paddingTop="100px";
    document.getElementsByClassName("modal-body")[0].innerHTML='<span style="font-size:1.5rem;font-weight:bolder;text-align:center;padding:4%;">Block this contact? Blocked contacts will no longer be able to call you or send you messages</span>'+'<br/>'+'<div style="display:block;margin:auto;"><button class="report " onclick="cancelit()">Cancel</button><button class="report " onclick="cancelit()">Block</button></div>';
 }
 function displayWallpaper(){
@@ -521,13 +550,13 @@ function backwallpaper(){
    console.log( document.getElementById("wallpaper"));
    
 }
-var url;
+var url,rurl,kurl;
 
 function changewallpaper(x){
    var prev=document.getElementsByClassName("selected")[0];
 prev.className="notSelected";
 prev.style.border="0px";
-prev.style.boxShadow="0px";
+prev.style.boxShadow="none";
 console.log(prev);
 x.className="selected";
 url=x.src;
@@ -537,6 +566,14 @@ document.getElementsByClassName("selected")[0].style.boxShadow="0px 12px 22px 1p
 console.log(x);
 }
 function changeimg(){
+   if(div.className==="raghav"){
+      wct++;
+      rurl=url;
+   }
+   else{
+      wct1++;
+      kurl=url;
+   }
    second.style.backgroundImage="url(\'"+url+"\')";
    second.style.backgroundPosition="cover";
    second.style.backgroundRepeat="no-repeat";
