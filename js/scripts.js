@@ -512,6 +512,7 @@ function displayReport(){
   document.getElementsByClassName("modal-body")[0].style.overflowY="scroll";
  modal.style.paddingTop="0px";
   document.getElementsByClassName("modal2")[0].style.paddingTop="0px";
+  document.getElementsByClassName("modal-body")[0].style.padding="1%";
   document.getElementsByClassName("modal-body")[0].innerHTML="";
   document.getElementsByClassName("modal-body")[0].innerHTML='<div id="report-content">Why are you repoting this account??</div><div id="reason"><table><tr><td><input type="radio" name="reason"></td><td>This account belongs to someone I know</td></tr><tr><td><input type="radio" name="reason"></td><td>This is a fake account</td></tr><tr><td><input type="radio" name="reason"></td><td>This is a same account</td></tr><tr><td><input type="radio" name="reason" onclick="checkedradio()" id="other-radio"></td><td>Other</td></tr><tr id="other"><td>Type<br>reason<br>here</td><td><textarea name="other" cols="40" rows="3"></textarea></td></tr></table><div style="text-align: center;"><button class="report " onclick="cancelit()">Report</button><button class="report " onclick="cancelit()">Cancel</button></div></div>';
 }
@@ -534,10 +535,13 @@ function displayVideo(){
 var modal4=document.getElementsByClassName("modal4")[0];
 function displayBlock(){
    modal.style.display = "block";
+   document.getElementsByClassName("modal-body")[0].style.display="block";
    header.innerHTML='<span style="font-size:2.5rem">&nbsp;Block Contact</span>';
+   document.getElementsByClassName("modal-body")[0].style.textAlign="left";
    document.getElementsByClassName("modal-body")[0].innerHTML="";
+   document.getElementsByClassName("modal-body")[0].style.padding="1%";
    document.getElementsByClassName("modal")[0].style.paddingTop="100px";
-   document.getElementsByClassName("modal-body")[0].innerHTML='<span style="font-size:1.5rem;font-weight:bolder;text-align:center;padding:4%;">Block this contact? Blocked contacts will no longer be able to call you or send you messages</span>'+'<br/>'+'<div style="display:block;margin:auto;"><button class="report " onclick="cancelit()">Cancel</button><button class="report " onclick="cancelit()">Block</button></div>';
+   document.getElementsByClassName("modal-body")[0].innerHTML='<span style="font-size:1.5rem;font-weight:bolder;text-align:center;padding:4%;">Block this contact? Blocked contacts will no longer be able to call you or send you messages</span>'+'<br/>'+'<div style="display:block;margin:auto;"><button class="report " style="margin-left:38.5%;" onclick="cancelit()">Cancel</button><button class="report " onclick="cancelit()">Block</button></div>';
 }
 function displayWallpaper(){
    document.getElementById("wallpaper").style.display="block";
