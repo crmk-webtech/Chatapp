@@ -48,7 +48,7 @@
         <!--Contacts-->
 
         <div class="col-12 col-md-6 outer " id="contacts">
-            <h3 style="position:sticky;top:0;background-color: #2088CB;color: white;margin:1px 0;padding: 18px;"><i class="fa fa-arrow-left" onclick="backcontact()"></i>&nbsp;&nbsp;&nbsp;<i class="fa fa-user" style="margin-left:7%"></i>&nbsp;Contacts</h3>
+            <h3 style="position:sticky;top:0;background-color: #2088CB;color: white;margin:1px 0;padding: 18px;"><i class="fa fa-arrow-left" style="cursor: pointer;" onclick="backcontact()"></i>&nbsp;&nbsp;&nbsp;<i class="fa fa-user" style="margin-left:7%"></i>&nbsp;Contacts</h3>
             <div id="contact-scroll">
             <div style="border-bottom: 1px groove; " class="col-12" >
                         
@@ -165,7 +165,7 @@
         <!--Settings-->
 
         <div class="col-12 col-md-6 outer " id="settings">
-            <h3 style="background-color: #2088CB;color: white;margin:1px 0;padding: 18px;"><i class="fa fa-arrow-left" onclick="back(this)"></i>&nbsp;&nbsp;&nbsp;<i class="fa fa-cogs" aria-hidden="true" style="margin-left:7%;"></i>&nbsp;Settings</h3>            <div style="text-align: right;font-size: 20px;padding: 10px;position: absolute;right: 5px;"><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a></div>
+            <h3 style="background-color: #2088CB;color: white;margin:1px 0;padding: 18px;"><i class="fa fa-arrow-left" style="cursor: pointer;" onclick="back(this)"></i>&nbsp;&nbsp;&nbsp;<i class="fa fa-cogs" aria-hidden="true" style="margin-left:7%;"></i>&nbsp;Settings</h3>            <div style="text-align: right;font-size: 20px;padding: 10px;position: absolute;right: 5px;"><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a></div>
             <div style="width:100%;margin-top:4vh;text-align: center;"><i class="fa fa-user-circle" style="font-size:5vw;"></i><br>Charu</div>
             <div id="settings-container" style="margin-top: 3vh;">
                 <a href="#"><div class="setting-options"><i class="fa fa-bell" aria-hidden="true"></i>&nbsp;Notifications</div></a>
@@ -181,7 +181,7 @@
         <!--Calls-->
 
         <div class="col-12 col-md-6 outer " id="calls">
-            <h3 style="background-color: #2088CB;color: white;margin:1px 0;padding: 18px;"><i class="fa fa-arrow-left" onclick="backcall()"></i>&nbsp;&nbsp;&nbsp;<i class="fa fa-phone" style="margin-left:7%"></i>&nbsp;calls</h3>
+            <h3 style="background-color: #2088CB;color: white;margin:1px 0;padding: 18px;"><i class="fa fa-arrow-left" style="cursor: pointer;" onclick="backcall()"></i>&nbsp;&nbsp;&nbsp;<i class="fa fa-phone" style="margin-left:7%"></i>&nbsp;Calls</h3>
            <div id="calls-scroll">
             <div style="border-bottom: 1px groove; " class="chat" class="col-12" >
                         
@@ -289,7 +289,7 @@
 
         
                 <div class="col-12 col-md-6 outer " id="group">
-                    <h3 style="top:0;background-color: #2088CB;color: white;margin:1px 0;padding: 18px;"><i class="fa fa-arrow-left" onclick="backgroup()"></i>&nbsp;&nbsp;&nbsp;<i class="fa fa-users"style="margin-left:7%;"></i>&nbsp;New Group</h3>
+                    <h3 style="top:0;background-color: #2088CB;color: white;margin:1px 0;padding: 18px;"><i class="fa fa-arrow-left" style="cursor: pointer;" onclick="backgroup()"></i>&nbsp;&nbsp;&nbsp;<i class="fa fa-users"style="margin-left:7%;"></i>&nbsp;New Group</h3>
                     <div class="row" style="text-align: center;"><div class="col-12"><input type="text" class="main contactsearch" style="width:90%;" placeholder="&#61442;  Search contacts to be added" size="35" id="searchbar"></div></div>
                     <div id="group-scroll">
 
@@ -429,7 +429,7 @@
                 <!--Saved messages-->
 
                 <div class="col-12 col-md-6 outer " id="saved">
-                    <h3 style="position:sticky;top:0;background-color: #2088CB;color: white;margin:1px 0;padding: 18px;"><i class="fa fa-arrow-left" onclick="backsaved()"></i>&nbsp;&nbsp;&nbsp;<i class="fa fa-bookmark" style="margin-left:7%;"></i>&nbsp;Saved Messages</h3>
+                    <h3 style="position:sticky;top:0;background-color: #2088CB;color: white;margin:1px 0;padding: 18px;"><i class="fa fa-arrow-left" style="cursor: pointer;" onclick="backsaved()"></i>&nbsp;&nbsp;&nbsp;<i class="fa fa-bookmark" style="margin-left:7%;"></i>&nbsp;Saved Messages</h3>
                     <div id="saved-scroll">
                     <div style="border-bottom: 1px groove; " class="col-12" >
                                 
@@ -577,7 +577,7 @@
                     <div class="row">
                         <div class="col-md-4  " id="inner" >
                             <div class="header">
-                            <i class="fa fa-bars" id="bars"></i>
+                            <i class="fa fa-bars" id="bars" style="cursor: pointer;"></i>
                             &nbsp;Chat app</div>
                         </div>
                     </div>
@@ -979,8 +979,8 @@
 
                         </span>
                         <span>
-                        <i class="fa fa-ellipsis-v" aria-hidden="true" id="ellipsis" onclick="chatMenu()"></i>
-                        <i class="fa fa-search" aria-hidden="true" id="inner-search"></i>
+                        <i class="fa fa-ellipsis-v" aria-hidden="true" id="ellipsis" onclick="chatMenu()" style="cursor: pointer;"></i>
+                        <i class="fa fa-search" aria-hidden="true" id="inner-search" style="cursor: pointer;"></i>
                         </span>
                     </div>
                 </div>
